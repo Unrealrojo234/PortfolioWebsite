@@ -1,0 +1,35 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+.video-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#title {
+  background: linear-gradient(to right, #84df17, #00898f, #eedd44,#00c762);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#profile{
+  border-radius:30% 70% 70% 30% / 30% 30% 70% 70%  ;
+  border: 2px solid;
+  background-color: #00898f;
+  border-color:yellowgreen ;
+}
+
+q{
+  font-style: italic;
+  font-family: monospace;
+}
