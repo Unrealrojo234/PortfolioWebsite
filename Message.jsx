@@ -1,5 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import Success from "./src/assets/Success";
+import Error from "./src/assets/Error";
+
 
 const serviceId = import.meta.env.VITE_REACT_API_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_API_TEMPLATE_ID;
@@ -18,19 +21,28 @@ export default function Message() {
       .then(
         () => {
           console.log("SUCCESS!");
+          $('#success').css('display','block');
+          $('.success').addClass('animate__animated animate__bounce animate__bounceOutUp')
+          
         },
         (error) => {
           console.log("FAILED...", error.text);
+          $('#error').css('display','block');
+          $('.error').addClass('animate__animated animate__bounce animate__bounceOutUp')
         }
       );
     e.target.reset();
+
   };
   return (
     <div className="container-fluid">
-      <h1>Message Me</h1>
-      <form className="form-control" ref={form} onSubmit={sendEmail}>
+      <h1 className="">Message Me</h1>
+      <Success/>
+      <Error/>
+      <form className="form-control" style={{backgroundColor:'#1b1c2c'}} ref={form} onSubmit={sendEmail}>
         <input
           name="name"
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
           className="form-control"
           required
           placeholder="Name: e.g John Doe"
@@ -39,6 +51,7 @@ export default function Message() {
         <br />
         <input
           name="phone"
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
           type="number"
           className="form-control"
           required
@@ -47,6 +60,7 @@ export default function Message() {
         <br />
         <input
           className="form-control"
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
           name="email"
           type="email"
           placeholder="Email: e.g johndoe@gmail.com"
@@ -55,6 +69,7 @@ export default function Message() {
         <br />
         <textarea
           className="form-control"
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
           name="message"
           type="text"
           placeholder="Compose your message here"

@@ -1,0 +1,26 @@
+.msg{
+    border-radius: 30px 5px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    width: 18rem;
+    padding: 20px;
+    border: 1px solid;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+
+}
+
+#success{
+    display: none;
+}
+
+#error{
+    display: none;
+}
+
+:root {
+    --animate-duration: 3s;
+    --animate-delay: 0.9s;
+  }

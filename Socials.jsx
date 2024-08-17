@@ -10,7 +10,7 @@ export default function Socials() {
           style={{ color: "#63E6BE" }}
         ></i>
       </h1>
-      <div className="social-card">
+      <div className="social-card" style={{backgroundColor:'#1b1c2c'}}>
         <div className="row">
           <div className="col">
             <a href="https://github.com/Unrealrojo234" target="blank">
