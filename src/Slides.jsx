@@ -78,19 +78,29 @@ const Slides = (props) => {
         <div className="embla__container">
           {works.map((index) => (
             <div className="embla__slide" key={index.name}>
-              <div className="embla__slide__number"> 
+              <div className="embla__slide__number">
                 <div className="text-center">
-                    <p style={{fontSize:24}}>{index.name}</p>
-                    <img src={index.img} style={{maxWidth:''}} className="img-fluid"/>
-                    <br/>
-                    <a href={index.link} style={{fontSize:24,textDecoration:'none'}} target="blank">Visit Site</a>
+                  <p style={{ fontSize: 24 }}>{index.name}</p>
+                  <img
+                    src={index.img}
+                    style={{ width: "50%" }}
+                    className="img-fluid ratio ratio-16x9"
+                  />
+                  <br />
+                  <a
+                    href={index.link}
+                    style={{ fontSize: 24, textDecoration: "none" }}
+                    target="blank"
+                  >
+                    Visit Site
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-          
+
       <div className="embla__controls">
         <div className="embla__buttons">
           <PrevButton
