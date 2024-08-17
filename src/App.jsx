@@ -4,8 +4,9 @@ import "./index.css";
 import space from '../public/Videos/space.mp4'
 import Skills from "./assets/Skills";
 import Slides from "./Slides";
-import './embla.css'
-
+import './embla.css';
+import Socials from "../Socials";
+import Message from "../Message";
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 7
@@ -59,6 +60,9 @@ class App extends Component {
         <hr/>
         <Slides slides={SLIDES} options={OPTIONS}/>
         <hr/>
+        <Socials/>
+        <hr/>
+        <Message/>
       </div>
     );
   }
