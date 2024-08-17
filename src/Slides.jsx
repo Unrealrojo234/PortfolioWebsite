@@ -18,7 +18,7 @@ import dbz from "../public/Images/projects/simplewebapp.png";
 const Slides = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: false, delay: 3000 }),
+    Autoplay({ playOnInit: true, delay: 3000 }),
   ]);
   const [isPlaying, setIsPlaying] = useState(false);
 

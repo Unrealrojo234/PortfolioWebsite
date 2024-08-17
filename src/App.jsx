@@ -7,6 +7,7 @@ import Slides from "./Slides";
 import './embla.css';
 import Socials from "../Socials";
 import Message from "../Message";
+import Footer from "./Footer";
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 7
@@ -36,11 +37,11 @@ class App extends Component {
         <br />
         <br />
         <br />
-        <div id="profile" className="container-fluid">
+        <div id="profile" className="container-fluid" style={{width:'20rem'}}>
           <img
             src={profile}
             className="img-fluid "
-            style={{ borderRadius: "50%" }}
+            style={{ borderRadius: "50%",width:'14rem'}}
           />
         </div>
         <div className="container-fluid">
@@ -63,6 +64,8 @@ class App extends Component {
         <Socials/>
         <hr/>
         <Message/>
+        <hr/>
+        <Footer/>
       </div>
     );
   }

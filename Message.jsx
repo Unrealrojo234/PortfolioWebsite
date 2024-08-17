@@ -62,7 +62,7 @@ export default function Message() {
         <br />
         <div className="d-grid">
           <button className="btn btn-success" type="submit" value="send">
-            Send
+            Send <i className="fa-regular fa-paper-plane fa-lg" style={{color: "#ffffff"}}></i>
           </button>
         </div>
       </form>
