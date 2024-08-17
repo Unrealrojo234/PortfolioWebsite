@@ -81,7 +81,7 @@ const Slides = (props) => {
               <div className="embla__slide__number"> 
                 <div className="text-center">
                     <p style={{fontSize:24}}>{index.name}</p>
-                    <img src={index.img} style={{maxWidth:'16rem'}} className="img-fluid"/>
+                    <img src={index.img} style={{maxWidth:''}} className="img-fluid"/>
                     <br/>
                     <a href={index.link} style={{fontSize:24,textDecoration:'none'}} target="blank">Visit Site</a>
                 </div>
