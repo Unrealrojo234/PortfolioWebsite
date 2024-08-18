@@ -76,8 +76,8 @@ export default function Message() {
         />
         <br />
         <div className="d-grid">
-          <button className="btn btn-success" type="submit" value="send">
-            Send <i className="fa-regular fa-paper-plane fa-lg" style={{color: "#ffffff"}}></i>
+          <button className="btn btn-outline-success" type="submit" value="send">
+            Send <i className="fa-regular fa-paper-plane fa-lg" ></i>
           </button>
         </div>
       </form>

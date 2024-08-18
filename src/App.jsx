@@ -1,13 +1,15 @@
 import { Component } from "react";
 import profile from "../public/Images/profile.png";
 import "./index.css";
-import space from '../public/Videos/space.mp4'
+import space from '/Videos/space.mp4'
 import Skills from "./assets/Skills";
 import Slides from "./Slides";
 import './embla.css';
 import Socials from "../Socials";
 import Message from "../Message";
 import Footer from "./Footer";
+import Packages from "../Packages";
+import Duration from "../Duration";
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 7
@@ -60,6 +62,10 @@ class App extends Component {
         <Skills/>
         <hr/>
         <Slides slides={SLIDES} options={OPTIONS}/>
+        <hr/>
+        <Packages/>
+        <hr/>
+        <Duration/>
         <hr/>
         <Socials/>
         <hr/>
