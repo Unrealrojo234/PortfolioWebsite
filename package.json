@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@vercel/speed-insights": "^1.0.12",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "emailjs": "^4.0.3",
