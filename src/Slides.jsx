@@ -146,7 +146,7 @@ const works = [
   },
   {
     name: "CV Generator",
-    link: "https://github.com/Unrealrojo234/CV-ResumeGenerator",
+    link: "https://cv-resume-generator.vercel.app/",
     img: resume,
   },
   {

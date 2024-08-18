@@ -2,6 +2,7 @@ import React, { useRef,useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Success from "./src/assets/Success";
 import Error from "./src/assets/Error";
+import './src/index.css'
 
 
 const serviceId = import.meta.env.VITE_REACT_API_SERVICE_ID;
@@ -34,15 +35,16 @@ export default function Message() {
     e.target.reset();
 
   };
+  $('.form-control').css('border-color','#00898f' )
   return (
     <div className="container-fluid">
-      <h1 className="">Message Me</h1>
+      <h1 className="">Message Me <i className="fa-regular fa-envelope fa-xl" style={{color: "#63E6BE"}}></i></h1>
       <Success/>
       <Error/>
-      <form className="form-control" style={{backgroundColor:'#1b1c2c'}} ref={form} onSubmit={sendEmail}>
+      <form className="" style={{backgroundColor:'#1b1c2c',padding:'10px'}} ref={form} onSubmit={sendEmail}>
         <input
           name="name"
-          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke',borderColor:'#00898f'}}
           className="form-control"
           required
           placeholder="Name: e.g John Doe"
@@ -51,7 +53,7 @@ export default function Message() {
         <br />
         <input
           name="phone"
-          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke',borderColor:'#00898f'}}
           type="number"
           className="form-control"
           required
@@ -60,7 +62,7 @@ export default function Message() {
         <br />
         <input
           className="form-control"
-          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke',borderColor:'#00898f'}}
           name="email"
           type="email"
           placeholder="Email: e.g johndoe@gmail.com"
@@ -69,7 +71,7 @@ export default function Message() {
         <br />
         <textarea
           className="form-control"
-          style={{backgroundColor:'#1b1c2c',color:'whitesmoke'}}
+          style={{backgroundColor:'#1b1c2c',color:'whitesmoke',borderColor:'#00898f'}}
           name="message"
           type="text"
           placeholder="Compose your message here"

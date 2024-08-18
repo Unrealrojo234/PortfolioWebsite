@@ -39,6 +39,20 @@ body{
   color: whitesmoke;
 }
 
-/* #002b32 */ 
+/* Responsiveness */
+@media screen and (min-width:768px){
+  #root{
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  video{
+    width: 70%;
+  }
+}
 
-/* #00262c */
+@media screen and (min-width:900px) {
+  form{
+    width: 500px;
+  }
+}
