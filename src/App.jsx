@@ -11,6 +11,7 @@ import Packages from "../Packages";
 import Duration from "../Duration";
 import Loader from "./assets/Loader";
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 7;
@@ -78,6 +79,7 @@ const App = () => {
       <Message />
       <hr />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 };
